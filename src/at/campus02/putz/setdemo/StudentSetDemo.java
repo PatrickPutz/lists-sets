@@ -28,6 +28,13 @@ public class StudentSetDemo {
         System.out.println("isSusiInSet = " + isSusiInSet);
         System.out.println("isMaxInSet = " + isMaxInSet);
 
+        students.add(susi);
+
+        // Jeden Studenten in Set ausgeben
+        for (String student : students){
+            System.out.println("Student: " + student);
+        }
+
     }
 
 }
