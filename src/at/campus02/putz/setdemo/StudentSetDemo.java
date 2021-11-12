@@ -13,7 +13,20 @@ public class StudentSetDemo {
         String susi = "Susi Sorglos";
         students.add(susi);
 
-        
+        System.out.println("Students: " + students);
+
+        // Sets können nur einzigartige Einträge haben, keine Duplikate
+        students.add(susi);
+        System.out.println("Students: " + students);
+
+        students.remove(susi);
+        System.out.println("Students: " + students);
+
+        boolean isSusiInSet = students.contains(susi);
+        boolean isMaxInSet = students.contains("Max Mustermann");
+
+        System.out.println("isSusiInSet = " + isSusiInSet);
+        System.out.println("isMaxInSet = " + isMaxInSet);
 
     }
 
